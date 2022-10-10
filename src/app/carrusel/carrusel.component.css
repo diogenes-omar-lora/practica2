@@ -1,0 +1,28 @@
+.spinner{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: solid 5px ;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    animation: spin 1s infinite;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(180deg);
+        border-left-color: #576182;
+        border-right-color: #1fc5a8;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.cubo{
+    margin: 30px auto;
+    width: 4rem;
+}
